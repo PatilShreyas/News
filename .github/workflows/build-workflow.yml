@@ -47,10 +47,10 @@ jobs:
 
     # 6. Upload APK Artifact
     - name: Upload APK
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with:
         name: news-app
-        path: **.apk
+        path: build/*.apk
       
     # 7. Test
     - name: Unit tests
