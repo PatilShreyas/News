@@ -50,7 +50,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: news-app
-        path: build/**/*.apk
+        path: app/build/outputs/apk/**/*.apk
       
     # 7. Test
     - name: Unit tests
